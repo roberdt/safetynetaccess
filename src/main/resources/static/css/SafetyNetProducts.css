@@ -1,0 +1,380 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 8, 2016, 12:03:38 PM
+    Author     : Robert Erdt
+*/
+
+body{
+        background-image: url('/images/blue_abstract_background.jpg');
+        margin: 0;	
+}            
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+/***********HEADER CONTAINER**********************/
+header{
+    padding: 10px;
+    color: white;
+    background-color:  #0074C8;
+    clear: left;
+    text-align: center;
+}
+.afterHeader{
+  font-size: xx-small;    
+}
+.heading{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;    	
+}
+/***********END OF HEADER CONTAINER**********************/
+
+
+/***********ARTICLE CONTAINER**********************/
+article {
+    padding: 10px;
+    overflow: hidden;
+}
+/***********END OF ARTICLE CONTAINER**********************/
+/***********SECTION CONTAINER**********************/
+section {
+    padding: 10px;
+    overflow: hidden;
+}
+/***********END OF SECTION CONTAINER**********************/
+/***********ADVERTISEMENT CONTAINER**********************/
+aside{
+    float: left;        
+    overflow: hidden;    
+}
+h1{
+     padding: 10px;
+     text-align: center;
+}
+
+.ad{
+    padding: 1em 1em;
+    border-style: solid;  
+    border-color: #0074C8;    
+}
+/***********END OF ADVERTISEMENT CONTAINER**********************/
+/***********OLD FOOTER CONTAINER**********************/
+footer {
+    padding: 1em;
+    color: white;
+    background-color:  #0074C8;
+    clear: left;
+    text-align: center;
+}
+.footer-btm{
+    position: fixed;
+    bottom: 0;
+    width:100%;
+}
+.footer-bottom{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
+    color: white;
+    background-color:  #0074C8;
+    text-align: center;
+}
+.footer-style {
+	font-size: small;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;	
+	color: white;
+	font-weight: bold;
+    clear: both;
+}
+/***********END OF OLD FOOTER CONTAINER**********************/
+/***********FOOTER CONTAINER**********************/
+.footerHTML{
+    padding: 1em;
+    color: white;
+    background-color:  #0074C8;
+    clear: left;
+    text-align: center;
+}
+/***********END OF FOOTER CONTAINER**********************/
+/***********NAVIGATION CONTAINER**********************/
+nav {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;    
+}
+
+.nav-style {
+	font-size:large;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;	
+	color: white;
+	font-weight: bold;
+        cursor:pointer;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;	    
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+/***********END OF NAVIGATION CONTAINER**********************/
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/************SORTABLE GRID ************************/
+#sortable { 
+  list-style-type: none;
+  margin: 0px; 
+  padding: 0; 
+}
+  
+#sortable li { 
+  margin: 3px 10px;
+  padding: 0px; 
+  float: left; 
+  width: 300px; 
+  height: 250px; 
+  font-size: 2em; 
+  text-align: left; 
+}
+/************END OF SORTABLE GRID ************************/
+
+ /****************APPLICATION ADVERT***************/
+ .outerSec{
+    display: table;    
+    margin: auto;
+    /*border: 2px solid black;*/
+ }
+ 
+ .innerSec{
+    /*border: 2px solid black;*/
+    float:left;
+    padding:20px;
+    margin:20px;
+ }
+ 
+.mainAdvImg{
+    box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.7); 
+    border-radius: 30px;
+}
+
+.mainAppPara{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    color: #146DAB;
+    font-weight: bold;
+    text-align:left;
+}
+
+.mainAppTitle{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    color: #146DAB;
+    font-weight: bold;
+    margin: 0px; 
+    padding: 10px;	
+    text-align:center;
+}
+   
+.picture {
+      float:left;
+      background-color:#146DAB;
+      width:320px;
+      padding:10px;
+     /* margin: 0 0 2% 2%;*/
+      box-sizing:border-box;
+      border-radius:10px;
+      text-align:center;
+    }
+ .picture > p {
+    padding: 0px;
+    margin: 4px;
+    color:white;
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;      
+ }
+/****************END OF APPLICATION ADVERT***************/
+
+/************SORTABLE IMAGES***********************/            
+.maFloatPool {
+    border-width: 0;
+    background-image: url('/SafetyNetAccess/images/MedicalAssistantFloatPool.png');
+    height: 100%;
+    width:100%;
+}
+.csrFloatPool {
+    border-width: 0;
+    background-image: url('/SafetyNetAccess/images/CSRFloatPool.png');
+    height: 100%;
+    width:100%;        
+}
+.pfap {
+    border-width: 0;
+    background-image: url('/SafetyNetAccess/images/PFAP.png');
+    height: 100%;
+    width:100%;                
+}     
+/************END OF SORTABLE IMAGES***********************/            
+
+/****************MAIN PAGE PARA***************/
+.mainPara{
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: xx-large;
+	color: #146DAB;
+	font-weight: bold;
+	margin: 0px; 
+  	padding: 10px;	
+  	text-align:left;
+}
+/****************END OF MAIN PAGE PARA***************/
+
+.mainContact {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: xx-large;
+        color: #0074C8;
+        font-weight: bold;
+}       
+.paraTitle {
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    color: #146DAB;
+    font-weight: bold;
+    border-left-color: #A0A0A0;
+    border-right-color: #C0C0C0;
+    border-top-color: #A0A0A0;
+    border-bottom-color: #C0C0C0;
+}            
+.paraContact {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        font-size: large;
+        color: #146DAB;
+        border-left-color: #A0A0A0;
+        border-right-color: #C0C0C0;
+        border-top-color: #A0A0A0;
+        border-bottom-color: #C0C0C0;
+}            
+.emailcontact {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    color: #0074C8;
+    font-weight: bold;
+    text-align: left;
+}
+
+.imageAbout{
+    border-style: solid;
+    border-color: #333; 
+    width:428px;
+    height:341px;    
+}
+/****************SUB PARA***************/
+.subPara{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    color: #146DAB;
+    font-weight: bold;
+    margin: 0px;
+    padding: 10px;
+    text-align:left;
+}
+/****************END OF MAIN PAGE PARA***************/
+
+.videoDiv {
+    float:left;
+    background-color:#146DAB;
+    padding:10px;
+    /* margin: 0 0 2% 2%;*/
+    box-sizing:border-box;
+    border-radius:10px;
+    text-align:center;
+}
+.videoDiv > p {
+    padding: 0px;
+    margin: 4px;
+    color:white;
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/***********NEW CSS STYLES***********/
+.indexHTML{
+    margin-left: 10px;
+    padding: 1em;
+    overflow: hidden;
+}
+
+.main {
+    float:left;
+    width:100%;
+    margin: 0px 10px;
+    padding: 1em;
+}
+.right {
+    float:left;
+    width:20%;
+}
+.navHTML {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+.headerHTML{
+    padding: 1em;
+    color: white;
+    background-color:  #0074C8;
+    clear: both;
+    text-align: center;
+}

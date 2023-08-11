@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="MySQL [socketFactory] - safetynetapp_db" uuid="0a5511fd-c021-4951-bb5e-95b386f9c3a4">
+      <driver-ref>4485d10f-82d8-4e79-9d19-83c486ac7159</driver-ref>
+      <synchronize>true</synchronize>
+      <configured-by-url>true</configured-by-url>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql:///safetynetapp_db?cloudSqlInstance=safety-net-app:us-east1:safetynetinstance</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+  </component>
+</project>

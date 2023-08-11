@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang=en xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/appheader :: head"></head>
+<body>
+<div th:insert="fragments/appgoogletagmanager.html :: div"></div>
+<header>
+  <div class='headerHTML' th:insert="fragments/apptitle :: h1">...</div>
+</header>
+<nav>
+  <div th:insert="fragments/appnavigation.html :: div"></div>
+  <span class="nav-style" onclick="openNav()">&#9776; Menu</span>
+</nav>
+<section>
+  <article>
+    <p class="paraTitle">Started in 2016.</p>
+    <p class="paraContact">A statement was made, “Java servlets and java server pages were LOW LEVEL programming”.</p>
+    <p class="paraContact">We love this statement, now we are going to share applications we have created for the hospital we work for and share our expertise and knowledge of this LOW LEVEL programming.</p>
+    <p class="paraContact">There are many great programmers out there, and we apologize if we miss giving you the credit.</p>
+    <p class="paraContact">SafetyNetAccess.org is in the process of transferring their applications, non-clinical informatics, to the CLOUD.</p>
+    <p class="paraContact">So, the best thing that describes our attitude is “ME” and “I wanna go fast”!</p>
+
+    <img th:src="@{/images/Iwannagofast_Me.JPG}" class="imageAbout" alt="ME - I WANNA GO FAST"/>
+
+    <br />
+    <p class="paraContact">SafetyNetAccess.org LLC</p>
+    <p class="paraContact">P.O. Box 458</p>
+    <p class="paraContact">Gregory Michigan 48137</p>
+
+    <aside>
+      <!-- INSERT HERE -->
+    </aside>
+
+  </article>
+</section>
+
+<footer th:replace="fragments/appfooter :: footer">
+</footer>
+</body>
+</html>
+

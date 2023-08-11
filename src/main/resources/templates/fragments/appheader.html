@@ -1,0 +1,41 @@
+<head th:fragment="header">
+  <!-- Meta Data -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge;IE=10;IE=9;IE=8;IE=7" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="Description" CONTENT="SafetyNetAccess.org is a product of SafetyNetAccess.org. Providing IT Applications for the Non-Clincal side of Hospitals, Medical Groups, Medical Clinics and the small Doctors Offices,
+  Category: Healthcare, Health Care, Non-Clinical Applications, Nonclinical Applications, Healthcare Applications, Health Care Applications" />
+  <!-- END Meta Data -->
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-M729DVD');</script>
+  <!-- End Google Tag Manager -->
+  <!-- JQuery Library -->
+  <link rel="stylesheet" th:href="@{/js/libs/jqueryui/themes/redmond/jquery-ui.css}" />
+  <script th:src="@{/js/libs/jqueryui/external/jquery/jquery.js}"></script>
+  <script th:src="@{/js/libs/jqueryui/jquery-ui.js}"></script>
+  <!-- END JQuery Library -->
+  <!-- Local Javascript and css -->
+  <script type="text/javascript" th:src="@{/js/SafetyNetProducts.js}"></script>
+  <link rel="stylesheet" type="text/css" th:href="@{/css/SafetyNetProducts.css}" />
+  <link rel="shortcut icon" th:href="@{/images/favicon.ico}" type="image/x-icon" />
+  <link rel="icon" th:href="@{/images/favicon.ico}" type="image/x-icon" />
+  <!-- END Local Javascript and css -->
+  <!-- Google Analytics -->
+  <script type="text/javascript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-64244811-1', 'auto');
+  ga('send', 'pageview');</script>
+  <!-- END Google Analytics -->
+  <!-- Google ADS -->
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-9720580462190758",
+  enable_page_level_ads: true });</script>
+  <!-- Google ADS -->
+  <title th:text="${title}"></title>
+</head>

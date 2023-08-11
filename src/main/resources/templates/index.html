@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang=en xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/appheader :: head"></head>
+<body>
+
+    <div class='headerHTML' th:insert="fragments/apptitle :: h1">...</div>
+
+    <div class='navHTML'>
+        <div th:insert="fragments/appnavigation.html :: div"></div>
+        <span class="nav-style" onclick="openNav()">&#9776; Menu</span>
+    </div>
+
+    <div class='indexHTML'>
+
+            <p class="mainPara">Building Whats Next.</p>
+            <p class="mainPara">Non-Clinical Business Informatics.</p>
+
+            <p class="mainAppTitle">FEATURED - Basic Life Support Application - <a target="_blank" href="https://blstrainingscheduler.safetynetaccess.info/ViewBLSCalendar">Demo</a></p>
+            <div class="outerSec">
+                <div class="videoDiv">
+                    <video width="100%" height="100%" autoplay muted loop playsinline id="vid">
+                        <source src="videos/SNABLS.mp4" type="video/mp4">
+                    </video>
+                    <script>
+                        document.getElementById("vid").play();
+                    </script>
+                </div>
+            </div>
+    </div>
+
+    <footer th:replace="fragments/appfooter :: footer">
+    </footer>
+</body>
+</html>

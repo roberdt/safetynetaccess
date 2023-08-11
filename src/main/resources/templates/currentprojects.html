@@ -1,0 +1,50 @@
+<html lang=en xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/appheader :: head"></head>
+<body>
+      <div th:insert="fragments/appgoogletagmanager.html :: div"></div>
+      <header>
+        <div class='headerHTML' th:insert="fragments/apptitle :: h1">...</div>
+      </header>
+      <nav>
+        <div th:insert="fragments/appnavigation.html :: div"></div>
+        <span class="nav-style" onclick="openNav()">&#9776; Menu</span>
+      </nav>
+      <div class='indexHTML'>
+        <p class="mainContact">Current Projects</p>
+          <!-- <aside>-->
+          <!-- INSERT HERE -->
+        <ul>
+          <li class="mainAppPara">Clinic Service Representative Float Pool Application</li><br />
+          <li class="mainAppPara">Patient Financial Assistance Program Application</li>
+          <ul>
+            <li class="subPara">COMING SOON! <a target="_blank" href="http://www.patientfinancialassistanceprogram.com/pfapapp/">Patient Financial Assistance Program Application</a> hosted on Oracle Cloud, contact by emailing
+              <a href="mailto:support@safetynetaccess.org?subject=Support Safety Net Access">SafetyNet@SafetyNetAccess.org</a>
+            </li>
+          </ul><br />
+          <li class="mainAppPara">High Financial Risk (Epic add on Application)</li><br />
+          <li class="mainAppPara">Voucher (Epic add on Application)</li><br />
+          <li class="mainAppPara">Ambulatory Medical Needs Fund (Epic add on Application)</li><br />
+          <li class="mainAppPara">Basic Life Support (BLS) Application</li>
+          <ul>
+            <li class="subPara">Basic Life Support Application, <a target="_blank" href="https://blstrainingscheduler.safetynetaccess.info/ViewBLSCalendar">Demo</a> hosted on Google Cloud, contact by emailing
+              <a href="mailto:support@safetynetaccess.org?subject=Support Safety Net Access">SafetyNet@SafetyNetAccess.org</a>
+            </li>
+          </ul><br />
+          <li class="mainAppPara">Clinic Service Representative Utilization Application (Epic add on Application)</li><br />
+          <li class="mainAppPara">Medical Assistant Float Pool Application</li><br />
+          <li class="mainAppPara">Medical Assistant Externship Application</li><br />
+        </ul>
+          <!-- </aside>
+          </article>
+          </section>-->
+        </div>
+
+        <div style="clear: both">
+          <br />
+          <br />
+          <br />
+        </div>
+        <footer th:replace="fragments/appfooter :: footer">
+        </footer>
+  </body>
+  </html>

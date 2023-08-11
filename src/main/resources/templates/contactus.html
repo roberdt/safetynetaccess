@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang=en xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/appheader :: head"></head>
+<body>
+<div th:insert="fragments/appgoogletagmanager.html :: div"></div>
+<header>
+  <div class='headerHTML' th:insert="fragments/apptitle :: h1">...</div>
+</header>
+<nav>
+  <div th:insert="fragments/appnavigation.html :: div"></div>
+  <span class="nav-style" onclick="openNav()">&#9776; Menu</span>
+</nav>
+
+<section>
+  <article>
+    <p class="mainContact">
+      Contact Us
+    </p>
+    <p class="emailcontact">
+      Please contact us, by emailing
+      <a href="mailto:support@safetynetaccess.org?subject=Support Safety Net Access">SafetyNet@SafetyNetAccess.org</a>
+    </p>
+
+    <aside>
+      <!-- INSERT HERE -->
+    </aside>
+  </article>
+</section>
+
+<div style="clear: both">
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+</div>
+
+<footer th:replace="fragments/appfooter :: footer">
+</footer>
+</body>
+</html>

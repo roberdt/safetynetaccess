@@ -1,0 +1,11 @@
+<div th:fragment="mySidenav" id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/">Home</a>
+    <!--<a href="/SafetyNetAccess/jsp/mainPages/SafetyNetClient.jsp">SNA- Desktop</a> -->
+   <a th:href="@{/currentprojects}">Current Projects</a>
+   <a href="http://safetynetaccess.blogspot.com/">SNA - Blogger</a>
+   <a th:href="@{/contactus}">Contact</a>
+   <a th:href="@{/about}">About</a>
+   <a th:href="@{/privatepolicy}">Privacy Policy</a>
+</div>
+
