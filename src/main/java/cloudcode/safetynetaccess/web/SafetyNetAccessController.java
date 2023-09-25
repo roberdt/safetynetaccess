@@ -6,6 +6,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import java.util.List;
+
 /** Defines a controller to handle HTTP requests */
 @Controller
 public final class SafetyNetAccessController {
@@ -30,7 +32,6 @@ public final class SafetyNetAccessController {
     model.addAttribute("service", service);
     return "index_old";
   }*/
-
   @GetMapping("/")
   public String test(Model model) {
     model.addAttribute("title", "Safety Net Access");
@@ -49,15 +50,21 @@ public final class SafetyNetAccessController {
     return "contactus";
   }
 
-    @GetMapping("/privatepolicy")
-    public String privatepolicy(Model model) {
-        model.addAttribute("title", "SNA - Private Policy");
-        return "privatepolicy";
-    }
+  @GetMapping("/privatepolicy")
+  public String privatepolicy(Model model) {
+    model.addAttribute("title", "SNA - Private Policy");
+    return "privatepolicy";
+  }
 
   @GetMapping("/currentprojects")
   public String currentprojects(Model model) {
     model.addAttribute("title", "SNA - Current Projects");
     return "currentprojects";
+  }
+
+  @GetMapping(value = "/ads.txt")
+  public String adstext(Model model) {
+    model.addAttribute("ads_text", "google.com, pub-9720580462190758, DIRECT, f08c47fec0942fa0");
+    return "ads";
   }
 }
