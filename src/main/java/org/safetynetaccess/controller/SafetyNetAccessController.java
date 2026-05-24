@@ -1,12 +1,10 @@
-package cloudcode.safetynetaccess.web;
+package org.safetynetaccess.controller;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-
-import java.util.List;
 
 /** Defines a controller to handle HTTP requests */
 @Controller
@@ -20,7 +18,7 @@ public final class SafetyNetAccessController {
    *
    * @return the index view template
    */
-  /*@GetMapping("/")
+  @GetMapping("/")
   public String helloWorld(Model model) {
 
     // Get Cloud Run environment variables.
@@ -30,10 +28,6 @@ public final class SafetyNetAccessController {
     // Set variables in html template.
     model.addAttribute("revision", revision);
     model.addAttribute("service", service);
-    return "index_old";
-  }*/
-  @GetMapping("/")
-  public String test(Model model) {
     model.addAttribute("title", "Safety Net Access");
     return "index";
   }

@@ -1,24 +1,29 @@
-# Use the official maven/Java 11 image to create a build artifact.
-# mavenhttps://hub.docker.com/_/
-FROM maven:3-jdk-11-slim AS build-env
+# Use the official maven/Java 17 image to create a build artifact.
+# https://hub.docker.com/_/maven
+FROM maven:3.9.4-eclipse-temurin-17 AS build-env
 
-# Set the working directory to /app
+# Set the working directory
 WORKDIR /app
-# Copy the pom.xml file to download dependencies
+
+# Copy only the pom.xml to leverage Docker layer caching
 COPY pom.xml ./
-# Copy local code to the container image.
+
+# Download all dependencies
+RUN mvn dependency:go-offline
+
+# Now copy the source code
 COPY src ./src
 
-# Download dependencies and build a release artifact.
-RUN mvn package -DskipTests
+# Build the application, skipping tests
+RUN mvn package -Dmaven.test.skip=true
 
-# Use OpenJDK for base image.
-# https://hub.docker.com/_/openjdk
-# https://docs.docker.com/develop/develop-images/multistage-build/#use-multi-stage-builds
-FROM openjdk:11.0.16-jre-slim
+# Use Google's official Distroless image for Java 17.
+# This is a minimal, secure, and reliable base image hosted by Google.
+FROM gcr.io/distroless/java17-debian12
 
-# Copy the jar to the production image from the builder stage.
+# Copy the built JAR from the build-env stage using a wildcard
+# This is more resilient to changes in the final JAR name.
 COPY --from=build-env /app/target/safety-net-access-*.jar /safety-net-access.jar
 
-# Run the web service on container startup.
-CMD ["java", "-jar", "/safety-net-access.jar"]
+# Run the web service on container startup
+CMD ["/safety-net-access.jar"]

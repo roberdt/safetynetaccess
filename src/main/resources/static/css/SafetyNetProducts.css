@@ -9,8 +9,11 @@ and open the template in the editor.
 */
 
 body{
-        background-image: url('/images/blue_abstract_background.jpg');
-        margin: 0;	
+    background-image: url('/images/blue_abstract_background.jpg');
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }            
 div.container {
     width: 100%;
@@ -44,6 +47,7 @@ header{
 article {
     padding: 10px;
     overflow: hidden;
+    flex: 1; /* This makes the content grow to push the footer down */
 }
 /***********END OF ARTICLE CONTAINER**********************/
 /***********SECTION CONTAINER**********************/
@@ -86,7 +90,6 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 1em;
     color: white;
     background-color:  #0074C8;
     text-align: center;
@@ -96,7 +99,12 @@ footer {
 	font-family: Verdana, Geneva, Tahoma, sans-serif;	
 	color: white;
 	font-weight: bold;
-    clear: both;
+    background-color: #0074C8;
+    text-align: center;
+    width: 100%;
+}
+.footer-style a {
+    color: white;
 }
 /***********END OF OLD FOOTER CONTAINER**********************/
 /***********FOOTER CONTAINER**********************/
@@ -119,11 +127,11 @@ nav {
 }
 
 .nav-style {
-	font-size:large;
+	font-size: larger;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;	
 	color: white;
 	font-weight: bold;
-        cursor:pointer;
+    padding-left: 10px;
 }
 
 .sidenav {

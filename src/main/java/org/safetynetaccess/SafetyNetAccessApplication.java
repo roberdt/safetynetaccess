@@ -1,4 +1,4 @@
-package cloudcode.safetynetaccess;
+package org.safetynetaccess;
 
 import java.util.Collections;
 import org.slf4j.Logger;
